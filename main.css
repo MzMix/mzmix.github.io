@@ -44,6 +44,10 @@ body {
     margin-top: 50px;
 }
 
+.noPadding {
+    padding: 0;
+}
+
 /* #e3eaa7 */
 /* #d5e1df */
 /* #b5e7a0 */
