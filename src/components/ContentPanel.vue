@@ -37,9 +37,9 @@ onMounted(() => {
 </script>
 
 <template>
-    <article :id="props.articleId">
+    <article :id="props.articleId" class="scrollTo">
 
-        <div class="d-flex flex-nowrap flex-lg-row flex-column p-4 shadow gap-5 mt-4 mb-4 bg-white">
+        <div class="d-flex flex-nowrap flex-lg-row flex-column p-4 shadow gap-5 mt-4 mb-4 bg-white scrollTo">
 
             <div class="d-flex flex-column gap-2 p-4 flex-grow-1" :class="[textFirst ? 'order-0' : 'order-1']">
                 <slot />

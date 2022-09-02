@@ -4,16 +4,17 @@ import CustomDivider from './CustomDivider.vue';
 </script>
 
 <template>
-    <section id="brickAppsOverview">
+    <section :id='BrickAppsOverview'>
 
-        <div class="container-fluid mt-5">
+        <div class="container-fluid">
 
             <!-- Nagłówek -->
-            <div class="d-flex flex-column text-center gap-0 mt-5 mb-4">
-                <h2>Aplikacje z serii <span class="text-purple">Klockiem w matematykę!</span></h2>
-                <CustomDivider><i class="bi bi-bricks"></i></CustomDivider>
+            <div class="row justify-content-center mb-5">
+                <div class="d-flex flex-column text-center gap-0">
+                    <h2>Aplikacje z serii <span class="text-purple">Klockiem w matematykę!</span></h2>
+                    <CustomDivider><i class="bi bi-bricks"></i></CustomDivider>
+                </div>
             </div>
-
             <!-- W układzie -->
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-10 col-sm-12 align-self-end">
@@ -169,7 +170,7 @@ import CustomDivider from './CustomDivider.vue';
 </template>
 
 <style scoped>
-#brickAppsOverview {
+section {
     background: url(/shadow-bl.png) center center;
     background-size: cover;
 }
