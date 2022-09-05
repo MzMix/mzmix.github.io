@@ -1,6 +1,11 @@
 <script setup>
-import ContentPanel from './ContentPanel.vue';
-import CustomDivider from './CustomDivider.vue';
+import ContentPanel from './ContentPanel/ContentPanel.vue';
+import CustomDivider from './ContentPanel/CustomDivider.vue';
+import ButtonPrimary from './ContentPanel/ButtonPrimary.vue';
+import ButtonPrimaryOutline from './ContentPanel/ButtonPrimaryOutline.vue';
+import PanelButtonGroup from './ContentPanel/PanelButtonGroup.vue';
+import ContentPanelWrapper from './ContentPanel/ContentPanelWrapper.vue';
+
 </script>
     
 <template>
@@ -9,41 +14,36 @@ import CustomDivider from './CustomDivider.vue';
         <div class="container-fluid">
 
             <!-- Nagłówek -->
-            <div class="d-flex flex-column text-center gap-0 mt-5 mb-4">
+            <div class="d-flex flex-column text-center gap-0 mt-5 mb-4 scrollTo">
                 <h2>Aplikacje do prowadzenia zajęć z <span class="text-purple">programowania</span></h2>
                 <CustomDivider><i class="bi bi-code-square"></i></CustomDivider>
             </div>
 
             <!-- Code Presentation Tool -->
-            <div class="row justify-content-center mb-5">
-                <div class="col-lg-10 col-sm-12 align-self-end">
+            <ContentPanelWrapper>
 
-                    <ContentPanel img="/codePresentationTool.png" order="img-text" articleId="Code-Presentation-Tool">
+                <ContentPanel img="/codePresentationTool.png" order="img-text" articleId="Code-Presentation-Tool">
 
-                        <h3>Code Presentation Tool</h3>
+                    <h3>Code Presentation Tool</h3>
 
-                        <p>Aplikacja <span class="text-purple">Code Presentation Tool</span> to narzędzie pozwalające na
-                            wyświetlanie wybranego pliku z kodem linijka po linijce.</p>
+                    <p>Aplikacja <span class="text-purple">Code Presentation Tool</span> to narzędzie pozwalające na
+                        wyświetlanie wybranego pliku z kodem linijka po linijce.</p>
 
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
-                            consectetur
-                            adipisicing elit.</p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
+                        consectetur
+                        adipisicing elit.</p>
 
-                        <div class="d-flex flex-lg-row flex-column gap-lg-4 gap-2 justify-content-center">
+                    <PanelButtonGroup>
+                        <ButtonPrimaryOutline link="/Code-Presentation-Tool/" altMsg="Dowiedz
+                                się więcej">Dowiedz
+                            się więcej</ButtonPrimaryOutline>
+                        <ButtonPrimary link="https://mzmix.github.io/Code-Presentation-Tool/" altMsg="Otwórz
+                                aplikację">Otwórz aplikację</ButtonPrimary>
+                    </PanelButtonGroup>
 
-                            <a class="btn btn-outline-purple align-self-center mt-2"
-                                href="/Code-Presentation-Tool/">Dowiedz się więcej</a>
+                </ContentPanel>
 
-                            <a class="btn btn-purple btn-lg align-self-center mt-2"
-                                href="https://mzmix.github.io/Code-Presentation-Tool/">Otwórz
-                                aplikację</a>
-
-                        </div>
-
-                    </ContentPanel>
-
-                </div>
-            </div>
+            </ContentPanelWrapper>
 
         </div>
 

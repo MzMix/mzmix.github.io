@@ -3,6 +3,8 @@ import Navbar from './components/NavbarNav.vue';
 import PageHero from './components/PageHero.vue';
 import BrickAppsOverview from './components/BrickAppsOverview.vue'
 import ItAppsOverview from './components/ItAppsOverview.vue'
+import PageFooter from './components/PageFooter.vue'
+
 </script>
 
 <template>
@@ -11,10 +13,14 @@ import ItAppsOverview from './components/ItAppsOverview.vue'
 
   <PageHero />
 
-  <main>
+  <main :id="'main'" class="scrollTo">
     <BrickAppsOverview />
     <ItAppsOverview />
   </main>
+
+  <footer>
+    <PageFooter />
+  </footer>
 
 </template>
 

@@ -2,12 +2,12 @@
     <section id="hero" class="hero d-flex align-items-center p-5">
         <div
             class="container d-flex flex-column justify-content-center align-items-center text-center position-relative">
-            <img src="/undraw_feeling_proud_qne1.svg" id="heroImg" class="m-3">
+            <img src="/undraw_feeling_proud_qne1.svg" id="heroImg" class="m-3 user-select-none">
             <h2>Witaj na <span class="text-purple">mzmix.github.io</span></h2>
             <p class="p-1">Zobacz zbiór aplikacji stworonych do pomocy w przeprowadzaniu zajęć <span
                     class="text-purple"><strong>STEAM</strong></span></p>
             <div class="d-flex p-1">
-                <button class="btn btn-purple btn-lg">Zobacz więcej</button>
+                <a class="btn btn-purple btn-lg" href="#Aplikacje-klocki" alt="Zobacz więcej">Zobacz więcej</a>
             </div>
         </div>
     </section>
@@ -16,11 +16,11 @@
 <style scoped>
 #hero {
     background: url(/heroShadow.png) center center;
-    background-size: cover;
 }
 
 #heroImg {
     animation: up-down 4s ease-in-out 0s infinite alternate-reverse both;
+    user-select: none;
 }
 
 @keyframes up-down {

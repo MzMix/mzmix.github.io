@@ -41,12 +41,12 @@ onMounted(() => {
 
         <div class="d-flex flex-nowrap flex-lg-row flex-column p-4 shadow gap-5 mt-4 mb-4 bg-white scrollTo">
 
-            <div class="d-flex flex-column gap-2 p-4 flex-grow-1" :class="[textFirst ? 'order-0' : 'order-1']">
+            <div class="d-flex flex-column gap-1 p-2 flex-grow-1" :class="[textFirst ? 'order-0' : 'order-1']">
                 <slot />
             </div>
 
-            <div class="d-flex flex-shrink-0 flex-column justify-content-center">
-                <img :src="props.img" alt="Grafika przedstawiająca aplikację" />
+            <div class="d-flex flex-shrink-0 flex-column justify-content-center align-items-center">
+                <img class="" :src="props.img" alt="Grafika przedstawiająca aplikację" />
             </div>
 
         </div>
