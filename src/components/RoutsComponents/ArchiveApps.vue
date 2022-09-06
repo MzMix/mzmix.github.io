@@ -32,11 +32,21 @@ const TimelineStructure = {
 
 <template>
     <div class="container-fluid">
+
         <div class="row">
-            <div class="col-8">
+            <div class="col-8 offset-2 p-4">
+                <h2>Aplikacje Archiwalne</h2>
 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptas, ipsa facilis rem, provident
+                    molestiae nam similique ad mollitia quos possimus eligendi labore explicabo, cupiditate earum? Ad
+                    tenetur a obcaecati.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-8 offset-2 p-4">
+                <h3 class="mb-4">Zobacz historię aplikacji archiwalnych</h3>
                 <CustomTimeline :TimelineStructure=TimelineStructure />
-
             </div>
         </div>
     </div>
