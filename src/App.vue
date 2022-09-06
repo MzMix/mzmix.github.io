@@ -1,22 +1,13 @@
 <script setup>
-import Navbar from './components/NavbarNav.vue';
-import PageHero from './components/PageHero.vue';
-import BrickAppsOverview from './components/BrickAppsOverview.vue'
-import ItAppsOverview from './components/ItAppsOverview.vue'
-import PageFooter from './components/PageFooter.vue'
-
+import Navbar from './components/General/NavbarNav.vue';
+import PageFooter from './components/General/PageFooter.vue'
 </script>
 
 <template>
 
   <Navbar />
 
-  <PageHero />
-
-  <main :id="'main'" class="scrollTo">
-    <BrickAppsOverview />
-    <ItAppsOverview />
-  </main>
+  <router-view></router-view>
 
   <footer>
     <PageFooter />

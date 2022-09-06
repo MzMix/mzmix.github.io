@@ -7,8 +7,7 @@ import SkipToContent from './SkipToContent.vue'
         <SkipToContent link='#main' />
         <nav class="navbar navbar-expand-lg bg-purple shadow sticky-top">
             <div class="container-fluid text-white">
-
-                <a class="navbar-brand text-white" href="/">mzmix.github.io</a>
+                <router-link to="/" class="navbar-brand text-white">mzmix.github.io</router-link>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">

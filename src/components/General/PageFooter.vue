@@ -1,5 +1,5 @@
 <script setup>
-import GoogleScholarIcon from './Icons/GoogleScholarIcon.vue';
+import GoogleScholarIcon from '../Icons/GoogleScholarIcon.vue';
 </script>
 
 <template>
@@ -11,7 +11,7 @@ import GoogleScholarIcon from './Icons/GoogleScholarIcon.vue';
             <div class="col-lg-3 offset-lg-1">
                 <h3>mzmix.github.io</h3>
 
-                <p>mzmix.github.io czyli połączenie mojego portfolio i zbioru aplikacji stworzonych do
+                <p>mzmix.github.io to połączenie mojego portfolio i zbioru aplikacji stworzonych do
                     pomocy w przeprowadzaniu zajęć z uczniami</p>
 
             </div>
@@ -32,10 +32,12 @@ import GoogleScholarIcon from './Icons/GoogleScholarIcon.vue';
             <div class="col-4">
                 <h3>Kontakt</h3>
 
-                <p><a href="https://github.com/MzMix" class="link-light"><i class="bi bi-github"></i> GitHub: MzMix</a>
+                <p><a href="https://github.com/MzMix" class="link-light" target="_blank"><i class="bi bi-github"></i>
+                        GitHub: MzMix</a>
                 </p>
 
-                <p><a href="https://scholar.google.com/citations?user=Tzzw3CQAAAAJ&hl=pl" class="link-light">
+                <p><a href="https://scholar.google.com/citations?user=Tzzw3CQAAAAJ&hl=pl" class="link-light"
+                        target="_blank">
                         <GoogleScholarIcon /> Google Scholar: Mikołaj Wojciech Zuziak
                     </a></p>
 
@@ -49,7 +51,8 @@ import GoogleScholarIcon from './Icons/GoogleScholarIcon.vue';
 
         <div class="row text-white pt-3" id="author">
             <div class="col-12 text-center font-monospace">
-                <p>mzmix.github.io | Mikołaj Zuziak | 2022</p>
+                <p><a href="https://mzmix.github.io/" class="text-decoration-none text-white">mzmix.github.io</a> |
+                    Mikołaj Zuziak | 2018-2022</p>
             </div>
         </div>
 

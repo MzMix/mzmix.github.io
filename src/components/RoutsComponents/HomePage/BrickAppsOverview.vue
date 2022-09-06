@@ -1,15 +1,16 @@
 <script setup>
-import ContentPanel from './ContentPanel/ContentPanel.vue';
-import CustomDivider from './ContentPanel/CustomDivider.vue';
-import ButtonPrimary from './ContentPanel/ButtonPrimary.vue';
-import ButtonPrimaryOutline from './ContentPanel/ButtonPrimaryOutline.vue';
-import PanelButtonGroup from './ContentPanel/PanelButtonGroup.vue';
-import ContentPanelWrapper from './ContentPanel/ContentPanelWrapper.vue';
+import ContentPanel from '../../ContentPanel/ContentPanel.vue';
+import CustomDivider from '../../ContentPanel/CustomDivider.vue';
+import ButtonPrimary from '../../ContentPanel/ButtonPrimary.vue';
+import ButtonPrimaryOutline from '../../ContentPanel/ButtonPrimaryOutline.vue';
+import RouterButtonPrimaryOutline from '../../ContentPanel/RouterButtonPrimaryOutline.vue';
+import PanelButtonGroup from '../../ContentPanel/PanelButtonGroup.vue';
+import ContentPanelWrapper from '../../ContentPanel/ContentPanelWrapper.vue';
 
 </script>
 
 <template>
-    <section :id='BrickAppsOverview'>
+    <section :id="'BrickAppsOverview'">
 
         <div class="container-fluid">
 
@@ -27,20 +28,19 @@ import ContentPanelWrapper from './ContentPanel/ContentPanelWrapper.vue';
 
                     <h3>W układzie z klockami</h3>
 
-                    <p>Aplikacja <span class="text-purple">W układzie z klockami</span> to wirtualna plansza, na
-                        której można
-                        umieszczać kolorowe pola.</p>
+                    <p>Aplikacja <span class="text-purple">W układzie z klockami</span> to wirtualna plansza na
+                        odwzorowanie</p>
 
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
                         consectetur
                         adipisicing elit.</p>
 
                     <p>
-                        Aplikacja pozwala na:
+                        Dodatjowo aplikacja pozwala na:
                     <ul>
                         <li>Zmianę sposobu opisu pól oraz ich zawartości</li>
                         <li>Tworzenie, eksport i import własnych zestawów kolorów</li>
-                        <li>Eksport do planszy do pliku .png</li>
+                        <li>Eksport planszy do pliku .png</li>
                     </ul>
                     </p>
 
@@ -147,8 +147,9 @@ import ContentPanelWrapper from './ContentPanel/ContentPanelWrapper.vue';
                     </p>
 
                     <PanelButtonGroup class="mt-4">
-                        <ButtonPrimaryOutline link="/wersje-archiwalne" altMsg="Zobacz
-                            wersje archiwalne">Zobacz wersje archiwalne</ButtonPrimaryOutline>
+                        <RouterButtonPrimaryOutline link="/wersje-archiwalne" altMsg="Zobacz
+                            wersje archiwalne">Zobacz wersje archiwalne</RouterButtonPrimaryOutline>
+
                     </PanelButtonGroup>
 
                 </ContentPanel>

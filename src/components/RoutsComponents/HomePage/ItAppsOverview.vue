@@ -1,10 +1,10 @@
 <script setup>
-import ContentPanel from './ContentPanel/ContentPanel.vue';
-import CustomDivider from './ContentPanel/CustomDivider.vue';
-import ButtonPrimary from './ContentPanel/ButtonPrimary.vue';
-import ButtonPrimaryOutline from './ContentPanel/ButtonPrimaryOutline.vue';
-import PanelButtonGroup from './ContentPanel/PanelButtonGroup.vue';
-import ContentPanelWrapper from './ContentPanel/ContentPanelWrapper.vue';
+import ContentPanel from '../../ContentPanel/ContentPanel.vue';
+import CustomDivider from '../../ContentPanel/CustomDivider.vue';
+import ButtonPrimary from '../../ContentPanel/ButtonPrimary.vue';
+import ButtonPrimaryOutline from '../../ContentPanel/ButtonPrimaryOutline.vue';
+import PanelButtonGroup from '../../ContentPanel/PanelButtonGroup.vue';
+import ContentPanelWrapper from '../../ContentPanel/ContentPanelWrapper.vue';
 
 </script>
     
