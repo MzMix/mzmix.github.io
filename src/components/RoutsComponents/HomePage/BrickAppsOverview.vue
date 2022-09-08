@@ -146,7 +146,6 @@ import ContentPanelWrapper from '../../ContentPanel/ContentPanelWrapper.vue';
                     <PanelButtonGroup class="mt-4">
                         <RouterButtonPrimaryOutline link="/wersje-archiwalne" altMsg="Zobacz
                             wersje archiwalne">Zobacz wersje archiwalne</RouterButtonPrimaryOutline>
-
                     </PanelButtonGroup>
 
                 </ContentPanel>
