@@ -10,10 +10,10 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 
 import HomePage from './components/RoutsComponents/HomePage.vue';
 import ArchiveApps from './components/RoutsComponents/ArchiveApps.vue';
-import wuzkPage from './components/RoutsComponents/wuzkPage.vue';
-import kwPage from './components/RoutsComponents/kwPage.vue';
-import kpPage from './components/RoutsComponents/kpPage.vue';
-import cpToolPage from './components/RoutsComponents/cpToolPage.vue';
+import wuzkPage from './components/RoutsComponents/W-ukladzie-z-klockami-Page.vue';
+import kwPage from './components/RoutsComponents/Klockowe-wiezowce-Page.vue';
+import kpPage from './components/RoutsComponents/Klockowe-pociagi-Page.vue';
+import cpToolPage from './components/RoutsComponents/Code-Presentation-Tool-Page.vue';
 
 const routes = [
     {
