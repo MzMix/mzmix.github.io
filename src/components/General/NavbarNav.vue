@@ -24,17 +24,29 @@ import SkipToContent from './SkipToContent.vue'
                                 Aplikacje do pracy z klockami
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#W-ukladzie-z-klockami">W ukladzie z klockami</a>
+                                <li>
+                                    <router-link to="/W-ukladzie-z-klockami" class="dropdown-item">W ukladzie z klockami
+                                    </router-link>
                                 </li>
-                                <li><a class="dropdown-item" href="#Klockowe-wiezowce">Klockowe wieżowce</a></li>
-                                <li><a class="dropdown-item" href="#Klockowe-pociagi">Klockowe pociągi</a></li>
-                                <li><a class="dropdown-item" href="#Wersje-archiwalne">Wersje archiwalne</a></li>
+                                <li>
+                                    <router-link to="/Klockowe-wiezowce" class="dropdown-item">Klockowe wieżowce
+                                    </router-link>
+                                </li>
+                                <li>
+                                    <router-link to="/Klockowe-pociagi" class="dropdown-item">Klockowe-pociagi
+                                    </router-link>
+                                </li>
+                                <li>
+                                    <router-link to="/Wersje-archiwalne" class="dropdown-item">Wersje archiwalne
+                                    </router-link>
+                                </li>
                             </ul>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-white" aria-current="page" href="#Code-Presentation-Tool">Code
-                                Presentation Tool</a>
+                            <router-link to="/Code-Presentation-Tool" class="nav-link text-white">Code
+                                Presentation Tool
+                            </router-link>
                         </li>
                     </ul>
 

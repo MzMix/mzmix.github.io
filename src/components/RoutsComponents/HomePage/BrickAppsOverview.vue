@@ -2,7 +2,6 @@
 import ContentPanel from '../../ContentPanel/ContentPanel.vue';
 import CustomDivider from '../../ContentPanel/CustomDivider.vue';
 import ButtonPrimary from '../../ContentPanel/ButtonPrimary.vue';
-import ButtonPrimaryOutline from '../../ContentPanel/ButtonPrimaryOutline.vue';
 import RouterButtonPrimaryOutline from '../../ContentPanel/RouterButtonPrimaryOutline.vue';
 import PanelButtonGroup from '../../ContentPanel/PanelButtonGroup.vue';
 import ContentPanelWrapper from '../../ContentPanel/ContentPanelWrapper.vue';
@@ -45,8 +44,8 @@ import ContentPanelWrapper from '../../ContentPanel/ContentPanelWrapper.vue';
                     </p>
 
                     <PanelButtonGroup>
-                        <ButtonPrimaryOutline link="/W-ukladzie-z-klockami/" altMsg="Dowiedz się więcej">Dowiedz się
-                            więcej</ButtonPrimaryOutline>
+                        <RouterButtonPrimaryOutline link="/W-ukladzie-z-klockami" altMsg="Dowiedz się więcej">Dowiedz
+                            się więcej</RouterButtonPrimaryOutline>
 
                         <ButtonPrimary link="https://mzmix.github.io/W-ukladzie-z-klockami/" altMsg="Otwórz aplikację">
                             Otwórz aplikację</ButtonPrimary>
@@ -79,9 +78,8 @@ import ContentPanelWrapper from '../../ContentPanel/ContentPanelWrapper.vue';
                     </p>
 
                     <PanelButtonGroup>
-                        <ButtonPrimaryOutline link="/Klockowe-wiezowce/" altMsg="Dowiedz
-                                się więcej">Dowiedz
-                            się więcej</ButtonPrimaryOutline>
+                        <RouterButtonPrimaryOutline link="/Klockowe-wiezowce" altMsg="Dowiedz się więcej">Dowiedz
+                            się więcej</RouterButtonPrimaryOutline>
                         <ButtonPrimary link="https://mzmix.github.io/Klockowe-wiezowce/" altMsg="Otwórz
                                 aplikację">Otwórz
                             aplikację</ButtonPrimary>
@@ -116,9 +114,8 @@ import ContentPanelWrapper from '../../ContentPanel/ContentPanelWrapper.vue';
                     </p>
 
                     <PanelButtonGroup>
-                        <ButtonPrimaryOutline link="/Klockowe-pociagi/" altMsg="Dowiedz
-                                się więcej">Dowiedz
-                            się więcej</ButtonPrimaryOutline>
+                        <RouterButtonPrimaryOutline link="/klockowe-pociagi" altMsg="Dowiedz się więcej">Dowiedz
+                            się więcej</RouterButtonPrimaryOutline>
                         <ButtonPrimary link="https://mzmix.github.io/Klockowe-pociagi/" altMsg="Otwórz
                                 aplikację">Otwórz
                             aplikację</ButtonPrimary>

@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 
 import './style.css'
@@ -10,12 +10,30 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 
 import HomePage from './components/RoutsComponents/HomePage.vue';
 import ArchiveApps from './components/RoutsComponents/ArchiveApps.vue';
+import wuzkPage from './components/RoutsComponents/wuzkPage.vue';
+import kwPage from './components/RoutsComponents/kwPage.vue';
+import kpPage from './components/RoutsComponents/kpPage.vue';
 
 const routes = [
     {
         path: '/',
         name: 'Home',
         component: HomePage
+    },
+    {
+        path: '/W-ukladzie-z-klockami',
+        name: 'W-ukladzie-z-klockami',
+        component: wuzkPage
+    },
+    {
+        path: '/Klockowe-wiezowce',
+        name: 'Klockowe-wiezowce',
+        component: kwPage
+    },
+    {
+        path: '/Klockowe-pociagi',
+        name: 'Klockowe-pociagi',
+        component: kpPage
     },
     {
         path: '/wersje-archiwalne',
@@ -25,7 +43,7 @@ const routes = [
 ]
 
 const router = createRouter({
-    history: createWebHashHistory(),
+    history: createWebHistory(),
     routes,
 })
 
