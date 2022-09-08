@@ -34,6 +34,9 @@ const props = defineProps({
     position: relative;
     max-width: 50vw;
     margin: 0 auto;
+
+    --TimelineColor: #7430fa;
+    --DotFill: #ffffff;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -41,7 +44,7 @@ const props = defineProps({
     content: '';
     position: absolute;
     width: 6px;
-    background-color: #7430fa;
+    background-color: var(--TimelineColor);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -63,8 +66,8 @@ const props = defineProps({
     width: 25px;
     height: 25px;
     right: -13px;
-    background-color: white;
-    border: 4px solid #7430fa;
+    background-color: var(--DotFill);
+    border: 4px solid var(--TimelineColor);
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -89,9 +92,9 @@ const props = defineProps({
     width: 0;
     z-index: 1;
     right: 30px;
-    border: medium solid #7430fa;
+    border: medium solid var(--TimelineColor);
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #7430fa;
+    border-color: transparent transparent transparent var(--TimelineColor);
 }
 
 /* Add arrows to the right TLContainer (pointing left) */
@@ -103,9 +106,9 @@ const props = defineProps({
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid #7430fa;
+    border: medium solid var(--TimelineColor);
     border-width: 10px 10px 10px 0;
-    border-color: transparent #7430fa transparent transparent;
+    border-color: transparent var(--TimelineColor) transparent transparent;
 }
 
 /* Fix the circle for TLContainers on the right side */
@@ -118,11 +121,14 @@ const props = defineProps({
     padding: 20px 30px;
     position: relative;
     border-radius: 6px;
-    border-color: #7430fa;
+    border-color: var(--TimelineColor);
+
+    min-width: 15vw;
+    max-width: 25vw;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1128px) {
 
     /* Place the timelime to the left */
     .timeline::after {
@@ -139,15 +145,15 @@ const props = defineProps({
     /* Make sure that all arrows are pointing leftwards */
     .TLContainer::before {
         left: 60px;
-        border: medium solid #7430fa;
+        border: medium solid var(--TimelineColor);
         border-width: 10px 10px 10px 0;
-        border-color: transparent #7430fa transparent transparent;
+        border-color: transparent var(--TimelineColor) transparent transparent;
     }
 
     /* Make sure all circles are at the same spot */
     .left::after,
     .right::after {
-        left: 15px;
+        left: 18px;
     }
 
     /* Make all right TLContainers behave like the left ones */
