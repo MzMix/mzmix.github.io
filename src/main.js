@@ -13,6 +13,7 @@ import ArchiveApps from './components/RoutsComponents/ArchiveApps.vue';
 import wuzkPage from './components/RoutsComponents/wuzkPage.vue';
 import kwPage from './components/RoutsComponents/kwPage.vue';
 import kpPage from './components/RoutsComponents/kpPage.vue';
+import cpToolPage from './components/RoutsComponents/cpToolPage.vue';
 
 const routes = [
     {
@@ -34,6 +35,11 @@ const routes = [
         path: '/Klockowe-pociagi',
         name: 'Klockowe-pociagi',
         component: kpPage
+    },
+    {
+        path: '/Code-Presentation-Tool',
+        name: 'Code-Presentation-Tool',
+        component: cpToolPage
     },
     {
         path: '/wersje-archiwalne',
