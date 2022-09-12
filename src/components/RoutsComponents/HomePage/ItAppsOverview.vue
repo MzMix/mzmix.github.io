@@ -3,9 +3,6 @@ import ContentPanel from '../../ContentPanel/ContentPanel.vue';
 import CustomDivider from '../../ContentPanel/CustomDivider.vue';
 import ButtonPrimary from '../../ContentPanel/ButtonPrimary.vue';
 import ButtonPrimaryOutline from '../../ContentPanel/ButtonPrimaryOutline.vue';
-import PanelButtonGroup from '../../ContentPanel/PanelButtonGroup.vue';
-import ContentPanelWrapper from '../../ContentPanel/ContentPanelWrapper.vue';
-
 </script>
     
 <template>
@@ -20,30 +17,28 @@ import ContentPanelWrapper from '../../ContentPanel/ContentPanelWrapper.vue';
             </div>
 
             <!-- Code Presentation Tool -->
-            <ContentPanelWrapper>
+            <ContentPanel img="/codePresentationTool.png" order="img-text" articleId="Code-Presentation-Tool">
 
-                <ContentPanel img="/codePresentationTool.png" order="img-text" articleId="Code-Presentation-Tool">
+                <template #Header>Code Presentation Tool</template>
 
-                    <h3>Code Presentation Tool</h3>
-
+                <template #Text>
                     <p>Aplikacja <span class="text-purple">Code Presentation Tool</span> to narzędzie pozwalające na
                         wyświetlanie wybranego pliku z kodem linijka po linijce.</p>
 
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
                         consectetur
                         adipisicing elit.</p>
+                </template>
 
-                    <PanelButtonGroup>
-                        <ButtonPrimaryOutline link="/Code-Presentation-Tool/" altMsg="Dowiedz
+                <template #Buttons>
+                    <ButtonPrimaryOutline link="/Code-Presentation-Tool/" altMsg="Dowiedz
                                 się więcej">Dowiedz
-                            się więcej</ButtonPrimaryOutline>
-                        <ButtonPrimary link="https://mzmix.github.io/Code-Presentation-Tool/" altMsg="Otwórz
+                        się więcej</ButtonPrimaryOutline>
+                    <ButtonPrimary link="https://mzmix.github.io/Code-Presentation-Tool/" altMsg="Otwórz
                                 aplikację">Otwórz aplikację</ButtonPrimary>
-                    </PanelButtonGroup>
+                </template>
 
-                </ContentPanel>
-
-            </ContentPanelWrapper>
+            </ContentPanel>
 
         </div>
 

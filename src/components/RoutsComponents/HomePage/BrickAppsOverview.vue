@@ -3,8 +3,6 @@ import ContentPanel from '../../ContentPanel/ContentPanel.vue';
 import CustomDivider from '../../ContentPanel/CustomDivider.vue';
 import ButtonPrimary from '../../ContentPanel/ButtonPrimary.vue';
 import RouterButtonPrimaryOutline from '../../ContentPanel/RouterButtonPrimaryOutline.vue';
-import PanelButtonGroup from '../../ContentPanel/PanelButtonGroup.vue';
-import ContentPanelWrapper from '../../ContentPanel/ContentPanelWrapper.vue';
 
 </script>
 
@@ -20,13 +18,13 @@ import ContentPanelWrapper from '../../ContentPanel/ContentPanelWrapper.vue';
                     <CustomDivider><i class="bi bi-bricks"></i></CustomDivider>
                 </div>
             </div>
+
             <!-- W układzie -->
+            <ContentPanel img="/wuzk-new.png" order="img-text" articleId="W-ukladzie-z-klockami">
 
-            <ContentPanelWrapper>
-                <ContentPanel img="/wuzk-new.png" order="img-text" articleId="W-ukladzie-z-klockami">
+                <template #Header>W układzie z klockami</template>
 
-                    <h3>W układzie z klockami</h3>
-
+                <template #Text>
                     <p>Aplikacja <span class="text-purple">W układzie z klockami</span> to wirtualna plansza na
                         odwzorowanie</p>
 
@@ -42,25 +40,24 @@ import ContentPanelWrapper from '../../ContentPanel/ContentPanelWrapper.vue';
                         <li>Eksport planszy do pliku .png</li>
                     </ul>
                     </p>
+                </template>
 
-                    <PanelButtonGroup>
-                        <RouterButtonPrimaryOutline link="/W-ukladzie-z-klockami" altMsg="Dowiedz się więcej">Dowiedz
-                            się więcej</RouterButtonPrimaryOutline>
+                <template #Buttons>
+                    <RouterButtonPrimaryOutline link="/W-ukladzie-z-klockami" altMsg="Dowiedz się więcej">Dowiedz
+                        się więcej</RouterButtonPrimaryOutline>
 
-                        <ButtonPrimary link="https://mzmix.github.io/W-ukladzie-z-klockami/" altMsg="Otwórz aplikację">
-                            Otwórz aplikację</ButtonPrimary>
-                    </PanelButtonGroup>
+                    <ButtonPrimary link="https://mzmix.github.io/W-ukladzie-z-klockami/" altMsg="Otwórz aplikację">
+                        Otwórz aplikację</ButtonPrimary>
+                </template>
 
-                </ContentPanel>
-            </ContentPanelWrapper>
+            </ContentPanel>
 
             <!-- Wieżowce -->
-            <ContentPanelWrapper>
+            <ContentPanel img="/klockoweWiezowce.png" order="text-img" articleId="Klockowe-wiezowce">
 
-                <ContentPanel img="/klockoweWiezowce.png" order="text-img" articleId="Klockowe-wiezowce">
+                <template #Header>Klockowe wieżowce</template>
 
-                    <h3>Klockowe wieżowce</h3>
-
+                <template #Text>
                     <p>Aplikacja <span class="text-purple">Klockowe wieżowce</span> to wirtualna plansza, na której
                         można
                         budować wieżowce różnych wysokości.</p>
@@ -76,27 +73,25 @@ import ContentPanelWrapper from '../../ContentPanel/ContentPanelWrapper.vue';
                         <li>Eksport do planszy do pliku .png</li>
                     </ul>
                     </p>
+                </template>
 
-                    <PanelButtonGroup>
-                        <RouterButtonPrimaryOutline link="/Klockowe-wiezowce" altMsg="Dowiedz się więcej">Dowiedz
-                            się więcej</RouterButtonPrimaryOutline>
-                        <ButtonPrimary link="https://mzmix.github.io/Klockowe-wiezowce/" altMsg="Otwórz
+                <template #Buttons>
+                    <RouterButtonPrimaryOutline link="/Klockowe-wiezowce" altMsg="Dowiedz się więcej">Dowiedz
+                        się więcej</RouterButtonPrimaryOutline>
+                    <ButtonPrimary link="https://mzmix.github.io/Klockowe-wiezowce/" altMsg="Otwórz
                                 aplikację">Otwórz
-                            aplikację</ButtonPrimary>
-                    </PanelButtonGroup>
+                        aplikację</ButtonPrimary>
+                </template>
 
 
-                </ContentPanel>
-
-            </ContentPanelWrapper>
+            </ContentPanel>
 
             <!-- Pociągi -->
-            <ContentPanelWrapper>
+            <ContentPanel img="/klockowePociagi.png" order="img-text" articleId="Klockowe-pociagi">
 
-                <ContentPanel img="/klockowePociagi.png" order="img-text" articleId="Klockowe-pociagi">
+                <template #Header>Klockowe pociągi</template>
 
-                    <h3>Klockowe pociągi</h3>
-
+                <template #Text>
                     <p>Aplikacja <span class="text-purple">Klockowe pociągi</span> to wirtualna plansza, na której
                         można
                         budować pociągi.</p>
@@ -112,26 +107,24 @@ import ContentPanelWrapper from '../../ContentPanel/ContentPanelWrapper.vue';
                         <li>Eksport do planszy do pliku .png</li>
                     </ul>
                     </p>
+                </template>
 
-                    <PanelButtonGroup>
-                        <RouterButtonPrimaryOutline link="/klockowe-pociagi" altMsg="Dowiedz się więcej">Dowiedz
-                            się więcej</RouterButtonPrimaryOutline>
-                        <ButtonPrimary link="https://mzmix.github.io/Klockowe-pociagi/" altMsg="Otwórz
+                <template #Buttons>
+                    <RouterButtonPrimaryOutline link="/klockowe-pociagi" altMsg="Dowiedz się więcej">Dowiedz
+                        się więcej</RouterButtonPrimaryOutline>
+                    <ButtonPrimary link="https://mzmix.github.io/Klockowe-pociagi/" altMsg="Otwórz
                                 aplikację">Otwórz
-                            aplikację</ButtonPrimary>
-                    </PanelButtonGroup>
+                        aplikację</ButtonPrimary>
+                </template>
 
-                </ContentPanel>
-
-            </ContentPanelWrapper>
+            </ContentPanel>
 
             <!-- Archiwum -->
-            <ContentPanelWrapper>
+            <ContentPanel img="/wersjeArchiwalne.png" order="text-img" articleId="Wersje-archiwalne">
 
-                <ContentPanel img="/wersjeArchiwalne.png" order="text-img" articleId="Wersje-archiwalne">
+                <template #Header>Wersje archiwalne</template>
 
-                    <h3>Wersje archiwalne</h3>
-
+                <template #Text>
                     <p>Wersje archiwalne aplikacji <span class="text-purple">nie są już rozwijane</span></p>
 
                     <p>
@@ -142,15 +135,14 @@ import ContentPanelWrapper from '../../ContentPanel/ContentPanelWrapper.vue';
                         <li>Klockowe pociągi</li>
                     </ul>
                     </p>
+                </template>
 
-                    <PanelButtonGroup class="mt-4">
-                        <RouterButtonPrimaryOutline link="/wersje-archiwalne" altMsg="Zobacz
+                <template #Buttons>
+                    <RouterButtonPrimaryOutline link="/wersje-archiwalne" altMsg="Zobacz
                             wersje archiwalne">Zobacz wersje archiwalne</RouterButtonPrimaryOutline>
-                    </PanelButtonGroup>
+                </template>
 
-                </ContentPanel>
-
-            </ContentPanelWrapper>
+            </ContentPanel>
 
         </div>
 
