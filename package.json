@@ -10,6 +10,7 @@
     "testBuild": "vite build && vite preview"
   },
   "dependencies": {
+    "@vueuse/core": "^9.2.0",
     "bootstrap": "^5.2.0",
     "bootstrap-icons": "^1.9.1",
     "vue": "^3.2.37",

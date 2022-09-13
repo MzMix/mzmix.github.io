@@ -1,6 +1,11 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
+import { breakpointsBootstrapV5, useBreakpoints } from '@vueuse/core'
+
+const breakpoints = useBreakpoints(breakpointsBootstrapV5);
+const isDesktop = breakpoints.greater('lg');
+
 const props = defineProps({
     PageSections: {
         required: true,
@@ -51,22 +56,24 @@ onMounted(() => {
 
 })
 
+const PageColumnSizing = 'col-md-10 col-sm-12 p-2';
+
 </script>
 
 <template>
+    <div class="container-fluid pt-4">
 
-    <main :id="'main'" class="scrollTo">
+        <div class="row">
 
-        <div class="container-fluid pt-4">
-            <div class="row">
+            <main :id="'main'" class="col-lg-8 offset-lg-2 col-md-10 offset-md-2 col-sm-12 scrollTo pt-4">
 
-                <article class="col-xxl-8 col-xl-10 col-lg-9 col-sm-12">
+                <article>
 
                     <div class="container-fluid">
 
                         <div class="row">
 
-                            <div class="col-10 offset-2 p-4">
+                            <div class="pt-4" :class="PageColumnSizing">
                                 <h1 class="text-underline-purple">
                                     <slot name="PageHeader">Page Header</slot>
                                 </h1>
@@ -78,7 +85,7 @@ onMounted(() => {
 
                             <div class="row">
 
-                                <div class="col-10 offset-2 p-4 scrollTo" :id="section.SectionHref">
+                                <div class="scrollTo" :id="section.SectionHref" :class="PageColumnSizing">
 
                                     <h2 :id="section.SectionId" class="sectionHeader">
                                         <span class="header-text">{{section.SectionHeader}}</span>
@@ -99,21 +106,26 @@ onMounted(() => {
                     </div>
                 </article>
 
-                <aside class="col-xl-2 col-lg-3 offset-xxl-2 pt-4 position-relative text-black-50">
-                    <div class="position-sticky sticky-top d-flex flex-column" style="top: 6em;">
-                        <a v-for="(section) in props.PageSections" :key="section.SectionHeader"
-                            :href="'#'+section.SectionHref"
-                            class="border-start border-2 text-decoration-none text-black-50 ps-2"
-                            :class="{active: section.SectionId == currentSection}">
-                            {{section.SectionHeader}}
-                        </a>
-                    </div>
+            </main>
 
-                </aside>
 
-            </div>
+            <aside v-if="isDesktop" class="col-md-2 col-sm-12 pt-4 position-relative text-black-50">
+
+                <div class="position-sticky sticky-top d-flex flex-column" style="top: 6em;">
+                    <a v-for="(section) in props.PageSections" :key="section.SectionHeader"
+                        :href="'#'+section.SectionHref"
+                        class="border-start border-2 text-decoration-none text-black-50 ps-2"
+                        :class="{active: section.SectionId == currentSection}">
+
+                        {{section.SectionHeader}}
+
+                    </a>
+                </div>
+
+            </aside>
+
         </div>
-    </main>
+    </div>
 
 </template>
 

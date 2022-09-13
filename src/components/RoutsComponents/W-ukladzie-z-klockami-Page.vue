@@ -72,7 +72,7 @@ const PageSections = [
                 dostępne wersje.
             </p>
 
-            <div class="d-flex flex-row gap-4 justify-content-center">
+            <div class="d-flex flex-row flex-wrap gap-4 justify-content-center">
                 <RouterButtonPrimaryOutline link="/wersje-archiwalne" altMsg="Zobacz wersje archiwalne">Zobacz wersje
                     archiwalne
                 </RouterButtonPrimaryOutline>

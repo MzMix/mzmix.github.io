@@ -16,8 +16,8 @@ const props = defineProps({
         <div v-for="element in props.TimelineStructure" :key="element.id" :class="[element.id % 2 ? 'right' : 'left']"
             class="TLContainer">
 
-            <div class="TLContent card">
-                <img :src=element.img class="card-img-top" :alt=element.header>
+            <div class="TLContent card p-2">
+                <img :src=element.img class="card-img-top p-1" :alt=element.header>
                 <div class="card-body">
                     <h5 class="card-title">{{ element.header }}</h5>
                     <p class="card-text">{{ element.text }}</p>
@@ -125,6 +125,11 @@ const props = defineProps({
 
     min-width: 15vw;
     max-width: 25vw;
+}
+
+.TLContent img {
+    max-width: 20vw;
+    align-self: center;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
