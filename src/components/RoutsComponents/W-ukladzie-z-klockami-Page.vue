@@ -9,7 +9,7 @@ const TimelineStructure = {
         id: 0,
         header: 'Wersja 5 - obecna',
         text: 'Lorem ipsum',
-        img: '/klockowePociagi.png'
+        img: '/TMP.png'
     },
     element1: {
         id: 1,

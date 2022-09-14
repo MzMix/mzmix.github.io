@@ -9,7 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import 'bootstrap-icons/font/bootstrap-icons.css'
 
 import HomePage from './components/RoutsComponents/HomePage.vue';
-import ArchiveApps from './components/RoutsComponents/ArchiveApps.vue';
+import archivalPage from './components/RoutsComponents/Aplikacje-archiwalne-Page.vue';
 import wuzkPage from './components/RoutsComponents/W-ukladzie-z-klockami-Page.vue';
 import kwPage from './components/RoutsComponents/Klockowe-wiezowce-Page.vue';
 import kpPage from './components/RoutsComponents/Klockowe-pociagi-Page.vue';
@@ -43,8 +43,8 @@ const routes = [
     },
     {
         path: '/wersje-archiwalne',
-        name: 'ArchiveApps',
-        component: ArchiveApps
+        name: 'Aplikacje-archiwalne',
+        component: archivalPage
     },
 ]
 

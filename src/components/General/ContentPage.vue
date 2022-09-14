@@ -65,7 +65,7 @@ const PageColumnSizing = 'col-md-10 col-sm-12 p-2';
 
         <div class="row">
 
-            <main :id="'main'" class="col-lg-8 offset-lg-2 col-md-10 offset-md-2 col-sm-12 scrollTo pt-4">
+            <main :id="'main'" class="col-lg-8 offset-lg-2 col-md-10 offset-md-2 col-sm-12 scrollTo pt-4 mb-5">
 
                 <article>
 
